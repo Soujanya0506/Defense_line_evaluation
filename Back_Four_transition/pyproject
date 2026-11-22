@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backfour"
+version = "1.0.0"
+description = "Evaluation of the last line of four outfield players during negative transitions in soccer"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "xgboost", "shap", "pingouin", "statsmodels",
+                "matplotlib", "tqdm"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
